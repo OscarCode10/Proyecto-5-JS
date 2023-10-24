@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --1:white;
+    --2:rgb(44, 44, 44);
+    --3:green;
+    --4:rgb(93, 175, 93);
+    --5:rgb(174, 251, 174);
+    --6:rgb(69, 135, 69);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--2);
+}
+
+.dance{
+    
+}
+
+.skeletonOff{
+    background-color: var(--3);
+    width: 34rem;
+    height: 37rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: .2rem;
+    border-radius: .8rem;
+    border: .3rem solid var(--5);
+    background-image: url('./../img/Skeleton.png');
+}
+
+.skeletonOn{
+    background-color: var(--3);
+    width: 34rem;
+    height: 37rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: .2rem;
+    border-radius: .8rem;
+    border: .3rem solid var(--5);
+    background-image: url('./../img/danceSkeleton.gif');
+}
+
+.skeletonOnOff{
+    display: flex;
+    width: 7rem;
+    height: 3rem;
+    background-color: var(--4);
+    border-radius: .5rem;
+    border: .2rem solid var(--5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skeletonOnOff:hover{
+    background-color: var(--6);
+}
